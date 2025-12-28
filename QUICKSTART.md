@@ -22,7 +22,10 @@ Get your Discord AI bot running in 5 minutes.
 ```bash
 git clone <repository-url>
 cd discord_agent
-pip install -e ".[llm]"
+# Install dependencies (choose one method)
+pip install -e ".[llm]"    # Recommended (requires correct build environment)
+# OR
+pip install -r requirements.txt
 ```
 
 ## Step 3: Configure
