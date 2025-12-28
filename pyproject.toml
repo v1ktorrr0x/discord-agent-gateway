@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "v1ktorrrr", email = "manhasvire@gmail.com"}
+    {name = "v1ktorrr0x", email = "manhasvire@gmail.com"}
 ]
 keywords = ["discord", "ai", "bot", "agent", "chatbot"]
 classifiers = [
