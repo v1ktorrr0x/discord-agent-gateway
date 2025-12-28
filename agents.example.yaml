@@ -1,0 +1,82 @@
+# Discord AI Bot Agent Configuration
+# 
+# Define your Discord bot agents in this file.
+# Each agent runs as a separate bot instance.
+
+agents:
+  # Example 1: Echo Bot (for testing)
+  - name: "Echo Bot"
+    discord_token: "YOUR_BOT_TOKEN_HERE"
+    type: "echo"
+    respond_to_dm: true
+    config:
+      prefix: "🔊 "
+      suffix: ""
+    
+    # Optional: Restrict to specific servers/channels
+    # guild_whitelist: ["123456789"]
+    # channel_whitelist: ["987654321"]
+
+  # Example 2: OpenAI GPT-4 Bot
+  - name: "AI Assistant"
+    discord_token: "YOUR_BOT_TOKEN_HERE"
+    type: "llm"
+    respond_to_dm: true
+    config:
+      provider: "openai"
+      model: "gpt-4"
+      system_prompt: "You are a helpful AI assistant."
+      max_history: 10
+      temperature: 0.7
+      max_tokens: 1000
+
+  # Example 3: Anthropic Claude Bot
+  # - name: "Claude Bot"
+  #   discord_token: "YOUR_BOT_TOKEN_HERE"
+  #   type: "llm"
+  #   respond_to_dm: true
+  #   config:
+  #     provider: "anthropic"
+  #     model: "claude-3-opus-20240229"
+  #     system_prompt: "You are Claude, a helpful AI assistant."
+  #     max_history: 15
+  #     temperature: 0.8
+  #     max_tokens: 2000
+
+  # Example 4: Server-specific Bot
+  # - name: "Server Bot"
+  #   discord_token: "YOUR_BOT_TOKEN_HERE"
+  #   type: "llm"
+  #   respond_to_dm: false
+  #   guild_whitelist:
+  #     - "123456789"  # Only works in this server
+  #   config:
+  #     provider: "openai"
+  #     model: "gpt-3.5-turbo"
+  #     system_prompt: "You are a server assistant."
+
+# Configuration Reference:
+#
+# Required fields:
+#   name: Unique name for the agent
+#   discord_token: Bot token from Discord Developer Portal
+#
+# Optional fields:
+#   type: "echo" or "llm" (default: "echo")
+#   respond_to_dm: true/false (default: true)
+#   guild_whitelist: List of allowed guild IDs (empty = all allowed)
+#   channel_whitelist: List of allowed channel IDs (empty = all allowed)
+#
+# Agent-specific config:
+#
+#   Echo agent:
+#     prefix: Text to prepend to echoed messages
+#     suffix: Text to append to echoed messages
+#
+#   LLM agent:
+#     provider: "openai" or "anthropic"
+#     model: Model name (e.g., "gpt-4", "claude-3-opus-20240229")
+#     system_prompt: System message for the AI
+#     max_history: Number of previous messages to remember (default: 10)
+#     temperature: 0.0-2.0 (creativity, default: 0.7)
+#     max_tokens: Maximum response length (default: 1000)
