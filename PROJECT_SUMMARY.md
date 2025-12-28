@@ -1,4 +1,4 @@
-# Discord AI Bot Handler - Project Overview
+# Discord Agent Gateway - Project Overview
 
 A lightweight Discord AI bot handler for running multiple AI agents from a single service.
 

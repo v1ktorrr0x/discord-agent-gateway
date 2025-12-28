@@ -1,5 +1,5 @@
 """
-Main CLI entry point for Discord AI Bot Handler.
+Main CLI entry point for Discord Agent Gateway.
 """
 
 import sys

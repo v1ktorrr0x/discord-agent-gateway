@@ -315,7 +315,7 @@ def main_menu():
     try:
         while True:
             clear_screen()
-            print_header("🤖 Discord AI Bot - Agent Manager")
+            print_header("🤖 Discord Agent Gateway - Manager")
             
             print("What would you like to do?")
             print()

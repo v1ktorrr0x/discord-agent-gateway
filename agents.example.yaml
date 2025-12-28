@@ -1,4 +1,4 @@
-# Discord AI Bot Agent Configuration
+# Discord Agent Gateway Configuration
 # 
 # Define your Discord bot agents in this file.
 # Each agent runs as a separate bot instance.

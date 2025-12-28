@@ -4,7 +4,7 @@ import os
 from unittest.mock import MagicMock, AsyncMock
 
 # Set dummy API key to pass validation
-os.environ["OPENAI_API_KEY"] = "sk-dummy-key"
+os.environ["OPENAI_API_KEY"] = "dummy-api-key"
 
 from src.agents.llm_agent import LLMAgent
 

@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_backend"
 
 [project]
-name = "discord-ai-bot-handler"
+name = "discord-agent-gateway"
 version = "0.1.0"
 description = "A modular Discord AI bot handler for running AI agents via Discord"
 readme = "README.md"

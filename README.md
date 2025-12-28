@@ -1,4 +1,4 @@
-# Discord AI Bot Handler
+# Discord Agent Gateway
 
 A lightweight, modular, and production-ready handler for running multiple AI agents on Discord. Built with Python, `discord.py`, and SQLAlchemy.
 

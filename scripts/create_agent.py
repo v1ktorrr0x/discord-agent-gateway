@@ -111,7 +111,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="Load Discord bot agents from YAML configuration",
+        description="Load Discord Agent Gateway agents from YAML configuration",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Example agents.yaml:

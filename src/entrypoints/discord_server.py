@@ -26,7 +26,7 @@ class DiscordServer:
     
     async def start(self) -> None:
         """Start the Discord server."""
-        logger.info("Starting Discord AI Bot Handler")
+        logger.info("Starting Discord Agent Gateway")
         logger.info(f"Environment: {settings.environment}")
         logger.info(f"Database: {settings.database_url}")
         

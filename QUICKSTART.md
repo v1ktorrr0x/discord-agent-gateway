@@ -1,4 +1,4 @@
-# Quick Start Guide
+# Quick Start Guide - Discord Agent Gateway
 
 Get your Discord AI bot running in 5 minutes.
 
@@ -36,9 +36,9 @@ cp .env.example .env
 
 Edit `.env` and add your API key (if using LLM):
 ```bash
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=your_openai_api_key_here
 # or
-ANTHROPIC_API_KEY=sk-ant-...
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
 ```
 
 ## Step 4: Create Agent
@@ -76,7 +76,7 @@ In Discord:
 
 Make sure you have an API key set in `.env`:
 ```bash
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 Then configure your agent with:
